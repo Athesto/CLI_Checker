@@ -1,6 +1,10 @@
 # Changelog
 > here you can see every change between versions
 
+## v0.5
+### Fixed
+ - For developers: the enviroment is checked and ignore input
+
 ## v0.4
 ### Fixed
  - python3.4 had problems with singal.signal()

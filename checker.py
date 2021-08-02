@@ -171,27 +171,30 @@ class CLI_Checker(Cmd):
         print('│' + ' ' * (columns - 2) + '│')  # Needs to be stored in a
         print('└' + '─' * (columns - 2) + '┘')  # Variable, somehow...
         print("\033[6;3f", end='')
-        email = str(input("Please enter your holberton e-mail: "))
         if (debug is True):
             email = debug_cred['email']
+        else:
+            email = str(input("Please enter your holberton e-mail: "))
 
         print("\033[5;0f", end='')
         print('┌' + '─' * (columns - 2) + '┐')
         print('│' + ' ' * (columns - 2) + '│')
         print('└' + '─' * (columns - 2) + '┘')
         print("\033[6;3f", end='')
-        api = str(input("Please enter your API key: "))
         if (debug is True):
             api = debug_cred['api']
+        else:
+            api = str(input("Please enter your API key: "))
 
         print("\033[5;0f", end='')
         print('┌' + '─' * (columns - 2) + '┐')
         print('│' + ' ' * (columns - 2) + '│')
         print('└' + '─' * (columns - 2) + '┘')
         print("\033[6;3f", end='')
-        password = getpass("\033[6;3fPlease enter your password: ")
         if (debug is True):
             password = debug_cred['password']
+        else:
+            password = getpass("\033[6;3fPlease enter your password: ")
 
         # Load custom mock loading Bar... - - - - - - - - - - - - - - - - - - |
         i = 0
