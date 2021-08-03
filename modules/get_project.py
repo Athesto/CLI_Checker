@@ -56,7 +56,8 @@ def get_tasks(project_number):
             print('{} Project not found'.format(bad_emoji[rand(0, 8)]))
             return
 
-    for key, value in sorted(tasks_dict.items()):
+    tmp = {int(k): v for k, v in tasks_dict.items()}
+    for key, value in tmp.items():
         number = key
         [title, task_id] = value
         print('\033[92m{}\033[m - {}'.format(number, title))
