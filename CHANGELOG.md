@@ -4,6 +4,7 @@
 ## v0.5
 ### Fixed
  - For developers: the enviroment is checked and ignore input
+ - using int(keys) in the task list for a better information
 
 ## v0.4
 ### Fixed
